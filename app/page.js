@@ -15,7 +15,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="h-[500px] flex items-center justify-center w-full bg-[url('/images/home/hero.png')] bg-cover bg-top">
         <div className="w-[60%] flex flex-col gap-5 ">
-          <h3 className=" text-3xl md:text-5xl font-bold text-white">Buy Top </h3>
+          <h3 className=" text-3xl md:text-5xl font-bold text-white">Explore Top </h3>
           <h3 className="text-3xl md:text-5xl font-bold text-white">Quality Tools</h3>
           <p className="text-xl text-white font-semibold">At <span className="text-first">Affordable</span> Prices!</p>          
           <Link 
@@ -27,9 +27,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Shop By Category Section */}
+      {/* PRoducts By Category Section */}
       <section className="mt-[50px]">
-        <Container1 headingTitle={"Shop By Category"}>
+        <Container1 headingTitle={"Products By Category"}>
           <ProductSlider1 
             data={[
               {'title':'Building Materials', 'img':'/images/home/categories/category1.png', 'quantity':'120','link':'#'},            
@@ -44,11 +44,11 @@ export default function Home() {
       </section>
 
 
-      {/* Deal of The Day Section */}
+      {/* Most Viewed Products Section */}
       <section className="mt-[50px]">
-        <Container1 headingTitle={"Deal of The Day"}>
+        <Container1 headingTitle={"Most Viewed Products"}>
            <div className="flex items-center justify-start gap-10 w-full overflow-x-auto">
-              <ProductItem1 img={"/images/home/deal1.png"} price={"95.00"} title={"Cordless Drill"} rating={5} />
+              <ProductItem1 img={"/images/home/deal1.png"} title={"Cordless Drill"}  />
               <ProductItem1 img={"/images/home/deal2.png"} price={"280.00"} oldPrice={"400.00"} title={"Glue Gun"} rating={5} discount={"18"} />
            </div>
         </Container1>

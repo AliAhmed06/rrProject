@@ -21,12 +21,12 @@ return (
         <img src={img} alt="" className="h-[150px] object-contain" />
         <div className='mt-5 space-y-2'>
             <h3 className='text-gray2'>{title}</h3>
-            <div className='space-x-3'>
+            {/* <div className='space-x-3'>
                 { oldPrice && <span className='text-red line-through'>${oldPrice}</span> }
                 
                 <span className='text-red font-semibold'>${price}</span>
             </div>
-            <Rating rating={rating} />
+            <Rating rating={rating} /> */}
             
         </div>
     </div>

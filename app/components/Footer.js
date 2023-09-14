@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='bg-first p-7 mx-auto flex flex-col items-center justify-between gap-5 mt-[-100px] 
                         lg:w-[60%] '>
           <h3 className='text-3xl font-semibold text-white'>Subscribe to Our Newsletter</h3>
-          <div className='w-full lg:px-10 flex items-center justify-center gap-5'>
+          <div className='w-full lg:px-10 flex flex-col md:flex-row items-center justify-center gap-5'>
             <input type="text" placeholder='Email' className='bg-transparent py-2 px-5 text-white rounded-md outline-none border border-gray1 focus:border-white placeholder-white' />
             <button className='bg-white py-3 px-5 rounded-md hover:opacity-80 text-second font-semibold text-sm'>
               SUBSCRIBE

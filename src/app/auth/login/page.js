@@ -23,7 +23,7 @@ const LoginPage = ({authProviders}) => {
   
   const loginHandler = async (data, e) => {
     e.preventDefault();
-    // console.log(data.email);
+    console.log(data.email);
     // return;
     try {
       setLoading(true);
@@ -33,13 +33,12 @@ const LoginPage = ({authProviders}) => {
           "Content-type": "application/json",
         },
         method: "POST",
-        // body: JSON.stringify({email: data.email, password: data.password}),
+        body: JSON.stringify({email: data.email, password: data.password}),
       });
-      // res = await res.json();
-      // console.log(res);
+      res = await res.json();
+      console.log(res);
       if(res.success === false){
-        toast.error(res.message)
-        // console.log("eeerrr");
+        toast.error(res.error)
       }
       else{
         router.push('/admin');        
@@ -67,10 +66,10 @@ const LoginPage = ({authProviders}) => {
               placeholder={"Enter Email"} 
               register= {...register("email", {
                 required: 'Email is required',
-                pattern: {
-                  value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-                  message: "Email is not in proper format"
-                }
+                // pattern: {
+                //   value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                //   message: "Email is not in proper format"
+                // }
               })}
               errorMessage={errors?.email?.message} 
             />

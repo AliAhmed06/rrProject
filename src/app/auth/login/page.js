@@ -64,14 +64,14 @@ const LoginPage = ({authProviders}) => {
               Icon={SiMinutemailer} 
               type={"email"} 
               placeholder={"Enter Email"} 
-              register= {...register("email", {
-                required: 'Email is required',
-                // pattern: {
-                //   value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-                //   message: "Email is not in proper format"
-                // }
-              })}
-              errorMessage={errors?.email?.message} 
+              // register= {...register("email", {
+              //   required: 'Email is required',
+              //   pattern: {
+              //     value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+              //     message: "Email is not in proper format"
+              //   }
+              // })}
+              // errorMessage={errors?.email?.message} 
             />
 
             <TextField 

@@ -23,7 +23,7 @@ const LoginPage = ({authProviders}) => {
   
   const loginHandler = async (data, e) => {
     e.preventDefault();
-    console.log(data.email);
+    // console.log(data.email);
     // return;
     try {
       setLoading(true);
@@ -33,7 +33,7 @@ const LoginPage = ({authProviders}) => {
           "Content-type": "application/json",
         },
         method: "POST",
-        body: JSON.stringify({email: data.email, password: data.password}),
+        // body: JSON.stringify({email: data.email, password: data.password}),
       });
       // res = await res.json();
       // console.log(res);

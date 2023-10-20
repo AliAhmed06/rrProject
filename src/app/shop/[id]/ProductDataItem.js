@@ -1,6 +1,6 @@
 "use client";
-import Rating from '@/app/components/Rating'
 import React, { useState } from 'react'
+import Rating from '../../components/Rating';
 
 const ProductDataItem = () => {
   const [quantity, setQuantity] = useState(1);

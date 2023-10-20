@@ -2,13 +2,13 @@
 import React, { useState } from 'react'
 
 import Link from 'next/link'
-import Container2 from '@/app/components/Container2';
-import Sidebar from '@/app/components/sidebar/Sidebar';
-import Container1 from '@/app/components/Container1';
+
 import ProductSlider2 from './ProductsSlider2';
 import ProductDataItem from './ProductDataItem';
 import TabComponent from './TabComponent';
-import ProductItem2 from '@/app/components/home/ProductItem2';
+import Container1 from '../../components/Container1';
+import Sidebar from '../../admin/components/Sidebar';
+import ProductItem2 from '../../components/home/ProductItem2';
 
 const Shop = ({params}) => {
   const [sliderImg, setSliderImg] = useState("/images/products/product1.jpg");

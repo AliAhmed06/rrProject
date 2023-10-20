@@ -36,7 +36,7 @@ const RegisterPage = ({authProviders}) => {
           method: "POST",
           body: JSON.stringify({username: data.name, email: data.email, password: data.password}),
       });
-      res = await res.json();
+      // res = await res.json();
       // console.log(res);
       if(res.error){
         toast.error(res.error)

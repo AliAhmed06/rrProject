@@ -35,8 +35,8 @@ const LoginPage = ({authProviders}) => {
         method: "POST",
         body: JSON.stringify({email: data.email, password: data.password}),
       });
-      res = await res.json();
-      console.log(res);
+      // res = await res.json();
+      // console.log(res);
       if(res.success === false){
         toast.error(res.message)
         // console.log("eeerrr");

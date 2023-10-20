@@ -60,18 +60,18 @@ const LoginPage = ({authProviders}) => {
         <h2 className='text-4xl font-bold text-first'>Sign in</h2>
         <p className='text-gray text-center'>Get access to one of the best Ecommerce services in the world</p>
         <form onSubmit={handleSubmit(loginHandler)} noValidate className="space-y-5">
-            <TextField 
+            {/* <TextField 
               Icon={SiMinutemailer} 
               type={"email"} 
               placeholder={"Enter Email"} 
-              // register= {...register("email", {
-              //   required: 'Email is required',
-              //   pattern: {
-              //     value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-              //     message: "Email is not in proper format"
-              //   }
-              // })}
-              // errorMessage={errors?.email?.message} 
+              register= {...register("email", {
+                required: 'Email is required',
+                pattern: {
+                  value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                  message: "Email is not in proper format"
+                }
+              })}
+              errorMessage={errors?.email?.message} 
             />
 
             <TextField 
@@ -86,7 +86,7 @@ const LoginPage = ({authProviders}) => {
                 }
               })}
               errorMessage={errors?.password?.message} 
-            />
+            /> */}
             
             <div className="flex items-center justify-end">
               <Link href={`#`} className="text-first text-sm hover:underline">Forgot Password</Link>

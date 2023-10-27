@@ -25,16 +25,13 @@ const LoginPage = ({ authProviders }) => {
     try {
       setLoading(true);
 
-      let res = await fetch(
-        `${process.env.NEXT_PUBLIC_DOMAIN_NAME}/api/login`,
-        {
-          headers: {
-            "Content-type": "application/json",
-          },
-          method: "POST",
-          body: JSON.stringify({ email: data.email, password: data.password }),
-        }
-      );
+      let res = await fetch(`/api/login`, {
+        headers: {
+          "Content-type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({ email: data.email, password: data.password }),
+      });
       res = await res.json();
       console.log(res);
       if (res.success === false) {

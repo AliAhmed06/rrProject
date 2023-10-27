@@ -11,7 +11,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "react-toastify";
 
 import TextField from "../login/TextField";
-import useLoaderStore from "@/src/stores/loaderStore";
+import useLoaderStore from "@/stores/loaderStore";
+// import useLoaderStore from "@/src/stores/loaderStore";
 
 const RegisterPage = ({ authProviders }) => {
   const setLoading = useLoaderStore((state) => state.setLoading);

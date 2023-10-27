@@ -1,5 +1,3 @@
-import { Package } from "../../types/package";
-
 const packageData = [
   {
     name: "Free package",

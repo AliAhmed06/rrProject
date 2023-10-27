@@ -2,12 +2,12 @@ import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 import TableOne from "../components/Tables/TableOne";
 import TableThree from "../components/Tables/TableThree";
 import TableTwo from "../components/Tables/TableTwo";
-import ProductsTable1 from "./ProductsTable1";
+import ProductsTable1 from "./CategoriesTable1";
 
-const ListProducts = () => {
+const ListCategories = () => {
   return (
     <>
-      <Breadcrumb pageName="Products" />
+      <Breadcrumb pageName="Categories" />
 
       <div className="flex flex-col gap-10">
         <ProductsTable1 />
@@ -16,4 +16,4 @@ const ListProducts = () => {
   );
 };
 
-export default ListProducts;
+export default ListCategories;

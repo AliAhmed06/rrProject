@@ -1,16 +1,20 @@
-"use client";
-import { useForm } from 'react-hook-form'
-// import { DevTool } from '@hookform/devtools';
-import Link from "next/link";
+import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
+import TableOne from "../components/Tables/TableOne";
+import TableThree from "../components/Tables/TableThree";
+import TableTwo from "../components/Tables/TableTwo";
 
-const Products = () => {
-  const { register, control, handleSubmit, formState } = useForm();
-  const { errors } = formState;  
+const page = () => {
   return (
-    <div className='h-full w-full flex p-10'>
-      <Link href="/admin/products/add" className='hover:underline'>Add New</Link>
-    </div>
-  )
-}
+    <>
+      <Breadcrumb pageName="Products" />
 
-export default Products
+      <div className="flex flex-col gap-10">
+        <TableOne />
+        <TableTwo />
+        <TableThree />
+      </div>
+    </>
+  );
+};
+
+export default page;

@@ -1,18 +1,16 @@
-import React from 'react'
+import { Metadata } from "next";
+import ECommerce from "./components/Dashboard/E-commerce";
 
-function Home() {
+export const metadata = {
+  title: "TailAdmin | Next.js E-commerce Dashboard Template",
+  description: "This is Home Blog page for TailAdmin Next.js",
+  // other metadata
+};
+
+export default function Home() {
   return (
-    <div className='bg-white w-full min-h-screen p-3'>
-        {/* Left SideBar */}
-        
-        <div>
-            {/* Search Bar */}
-
-
-            {/* Main Content */}
-        </div>
-    </div>
-  )
+    <>
+      <ECommerce />
+    </>
+  );
 }
-
-export default Home
